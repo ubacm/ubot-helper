@@ -12,7 +12,7 @@ class Vcf(object):
         self.uni, self.major = value.split(';')
       if key == 'TITLE':
         self.title = value
-      if key == 'URL':
+      if 'URL' in key:
         self.website = value
       if 'EMAIL' in key:
         self.email = value
